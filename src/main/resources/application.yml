@@ -1,0 +1,18 @@
+spring:
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 104857600  #单个文件的最大上限
+      max-request-size: 104857600 #单个请求的文件总大小上限
+
+fdfs:
+  so-timeout: 1501
+  connect-timeout: 601
+  thumb-image: # 缩略图生成参数
+    width: 60
+    height: 60
+  tracker-list: # tracker地址
+    - 192.168.111.128:22122
+  pool:
+    max-total: 150         #从池中借出的对象的最大数目
+    max-wait-millis: 100   #获取连接时的最大等待毫秒数100
